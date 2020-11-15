@@ -37,6 +37,8 @@
         <input type="date" value="2017-09-13">
       </div>
       <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
+      <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
+
     </form>   
 </div>
 
