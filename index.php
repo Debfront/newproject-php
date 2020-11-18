@@ -8,9 +8,10 @@
     <style type="text/css">
         #tamanhocontainer{
             width:500px;
+            background-color:#E2EFED;
         }
         #botao{
-            background-color: #9E1E4C; 
+            background-color: #FC3563; 
             color: #ffffff; 
             font-weight: bold;
         }
@@ -18,29 +19,29 @@
 </head>
 <body>
 <div class="container" id="tamanhocontainer" style="margin-top:40px">
-    <h4>Formulário de Cadastro</h4>
-    <form style="margin-top: 20px">
+    <h4 style="color: #626266">Formulário de Cadastro</h4>
+    <form action="_inserir_produto.php" method="post" style="margin-top: 20px">
        <div class="form-group">
         <label>Frota</label>
-        <input type="number" class="form-control" placeholder=" Digite o número da frota">
+        <input type="number" name="frota" class="form-control" placeholder=" Digite o número da frota" required autocomplete=off>
       </div>
       <div class="form-group">
         <label>Cliente</label>
-        <input type="text" class="form-control" placeholder=" Digite o nome do cliente">
+        <input type="text"  name="cliente"class="form-control" placeholder=" Digite o nome do cliente" required autocomplete=off>
       </div>
       
       <div class="form-group">
         <label>Nota fiscal</label>
-        <input type="number" class="form-control" placeholder="Insira o número da nota fiscal">
+        <input type="number" name="notafiscal"class="form-control" placeholder="Insira o número da nota fiscal" required autocomplete=off>
       </div>
       
       <div class="form-group">
         <label>Transportadora</label>
-        <input type="text" class="form-control" placeholder="Insira o nome da transportadora">
+        <input type="text" name="transportadora"class="form-control" placeholder="Insira o nome da transportadora" required autocomplete=off>
       </div>
       <div class="form-group">
         <label>Data</label>
-        <input type="date" value="2017-09-13">
+        <input type="date" name="data"value="2017-09-13" required autocomplete=off>
       </div>
       <div style="text-align:right";>
       <button type="submit" id="botao" class="btn btn-sm"> Cadastrar</button>
