@@ -9,11 +9,17 @@
         #tamanhocontainer{
             width:500px;
         }
+        #botao{
+            background-color: #9E1E4C; 
+            color: #ffffff; 
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 <div class="container" id="tamanhocontainer" style="margin-top:40px">
-    <form>
+    <h4>Formulário de Cadastro</h4>
+    <form style="margin-top: 20px">
        <div class="form-group">
         <label>Frota</label>
         <input type="number" class="form-control" placeholder=" Digite o número da frota">
@@ -36,9 +42,9 @@
         <label>Data</label>
         <input type="date" value="2017-09-13">
       </div>
-      <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
-      <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
-
+      <div style="text-align:right";>
+      <button type="submit" id="botao" class="btn btn-sm"> Cadastrar</button>
+      </div>
     </form>   
 </div>
 
